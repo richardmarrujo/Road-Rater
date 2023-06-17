@@ -5,8 +5,9 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
     var users = [
         { username: 'admin', password: 'Test123' },
         { username: 'rikrujo', password: 'Muscles123' },
+        { username: 'Spartan#6855', password: 'Carndog123' },
         { username: 'aperez', password: 'I love Dick' },
-        { username: 'ladam', password: 'Richard is cool' }
+        { username: 'papapowski94', password: 'Richard is cool' }
         // Add more username/password pairs as needed
     ];
 
