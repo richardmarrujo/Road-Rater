@@ -26,7 +26,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
         showSuccessMessage("Login successful");
         console.log('Username and password are correct.');
         // Add code for redirecting or further actions after successful login
-        window.location.href = "index.html"; // Redirect to the dashboard page
+        window.location.href = "https://richardmarrujo.github.io/Road-Rater/index.html"; // Redirect to the dashboard page
         // Perform other actions or set up user session, etc.
     } else {
         // Invalid login
