@@ -2,22 +2,38 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
     event.preventDefault(); // Prevent form submission
 
     // Get input values
+    var users = [
+        { username: 'admin', password: 'Test123' },
+        { username: 'rikrujo', password: 'Muscles123' },
+        { username: 'aperez', password: 'I love Dick' },
+        // Add more username/password pairs as needed
+    ];
+
+    function checkCredentials(username, password) {
+        for (var i = 0; i < users.length; i++) {
+            var user = users[i];
+            if (user.username === username && user.password === password) {
+                return true; // Username and password match
+            }
+        }
+        return false; // No matching username and password found
+    }
+
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
 
-    // Check if username and password are valid
-    if (username === "admin" && password === "Test123") {
-        // Successful login
+    if (checkCredentials(username, password)) {
         showSuccessMessage("Login successful");
-
+        console.log('Username and password are correct.');
         // Add code for redirecting or further actions after successful login
         window.location.href = "index.html"; // Redirect to the dashboard page
         // Perform other actions or set up user session, etc.
-
     } else {
         // Invalid login
         showErrorMessage("Invalid username or password");
+        console.log('Invalid username or password.');
     }
+
 });
 
 function showSuccessMessage(message) {
