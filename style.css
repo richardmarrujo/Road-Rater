@@ -1,0 +1,127 @@
+body {
+    font-family: system-ui;
+    background-image: url("https://cdn.pixabay.com/photo/2018/08/17/10/04/traffic-3612474_960_720.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    height: 100%;
+}
+
+#logoutButton{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.612);
+    color: white;
+    cursor: pointer;
+}
+
+h1 {
+     text-shadow: 5px 3px #000000;
+}
+
+h2 {
+     text-shadow: 5px 3px #000000;
+}
+
+#Main {
+    position: relative;
+    top: 20px;
+    left: 35%;
+    text-align: center;
+    width: 30%;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 150px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+textarea {
+    width: 30%;
+    padding: 3px;
+}
+
+.hiddenDiv {
+    position: relative;
+    left: 30%;
+    margin-top: 22px;
+    text-align: center;
+    width: 40%;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.612);
+    border-radius: 150px;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 1s ease;
+}
+
+.visibleDiv {
+    opacity: 1;
+    height: auto;
+}
+
+#history{
+    font-size: 2rem;
+    text-shadow: 5px 3px #000000;
+}
+
+.dropdown {
+    position: absolute;
+    top: 13%;
+    right: 5%;
+    width: 20%;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.612);
+    border-radius: 15px;
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    cursor: pointer;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 7px 0 7px;
+    border-color: #ffffff transparent transparent transparent;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 99%;
+    background-color: rgba(0, 0, 0, 0.612);
+    border: 2px solid rgb(0, 0, 0);
+    border-top: 0;
+}
+
+.dropdown.active .dropdown-content {
+    display: block;
+}
+
+#arrayData {
+    margin-top: 3px;
+    white-space: pre-wrap;
+    border-bottom-left-radius: 15;
+    border-bottom-right-radius: 15;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    left: 42%;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 150px;
+}
