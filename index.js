@@ -4,7 +4,7 @@ document.getElementById("logoutButton").addEventListener("click", function () {
     // Perform necessary tasks such as clearing user session, resetting data, etc.
 
     // Redirect the user to the login page
-    window.location.href = "login.html";
+    window.location.href = "https://richardmarrujo.github.io/Road-Rater/login.html";
 });
 
 
@@ -39,7 +39,7 @@ document.getElementById("Submit").addEventListener("keydown", function (event) {
 
         // Show the most recent array of form field values
         var arrayDataDiv = document.getElementById("arrayData");
-        arrayDataDiv.textContent = "Most Recent Form Field Values:\n" + fieldData.join("\n");
+        arrayDataDiv.textContent = "Most Recent Submission:\n" + fieldData.join("\n");
         arrayDataDiv.
 
         // Fade back out after a certain duration
