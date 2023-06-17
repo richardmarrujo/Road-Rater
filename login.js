@@ -32,6 +32,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
         // Perform other actions or set up user session, etc.
     } else {
         // Invalid login
+        password = '';
         showErrorMessage("Invalid username or password");
         console.log('Invalid username or password.');
     }
