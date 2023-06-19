@@ -5,7 +5,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
     var users = [
         { username: 'admin', password: 'Test123' },
         { username: 'rikrujo', password: 'Muscles123' },
-        { username: 'Spartan#6855', password: 'Carndog123' },
+        { username: 'spartan#6855', password: 'Carndog123' },
         { username: 'aperez', password: 'I love Dick' },
         { username: 'papapowski94', password: 'Richard is cool' },
         { username: 'bbuford', password: 'Clickers123' }
@@ -22,8 +22,11 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
         return false; // No matching username and password found
     }
 
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
+    var username = document.getElementById("username").value.toLowerCase;
+    var password = document.getElementById("password").value.toLowerCase;
+
+    console.log(username, password);
+
 
     if (checkCredentials(username, password)) {
         showSuccessMessage("Login successful");
