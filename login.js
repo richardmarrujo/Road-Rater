@@ -22,7 +22,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
         return false; // No matching username and password found
     }
 
-    var username = document.getElementById("username").value.toLowerCase;
+    var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
 
     console.log(username, password);
