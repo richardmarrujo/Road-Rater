@@ -23,7 +23,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
     }
 
     var username = document.getElementById("username").value.toLowerCase;
-    var password = document.getElementById("password").value.toLowerCase;
+    var password = document.getElementById("password").value;
 
     console.log(username, password);
 
