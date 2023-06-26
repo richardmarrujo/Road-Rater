@@ -18,8 +18,11 @@ document.getElementById("Submit").addEventListener("click", function (event) {
     var plateField = "Plate: " + document.getElementById("plateField").value;
     var commentsValue = "Comments: " + document.getElementById("commentsField").value;
 
-    // Create an array to store the values
+// Create an array to store the values
     var fieldData = [dateValue, rateValue, plateField, commentsValue];
+    if (fieldData[0].length < 7 || fieldData[1] < 7){
+        confirm("Are you sure you want to submit the form without a Date or Rate?")
+    }
 
     // Log the array for demonstration
     console.log(fieldData);
@@ -55,4 +58,32 @@ document.addEventListener("DOMContentLoaded", function () {
     arrowSelect.addEventListener("click", function () {
         dropdown.classList.toggle("active");
     });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the search input element
+    var searchInput = document.getElementById("searchInput");
+
+    // Add event listener to hide placeholder on focus
+    searchInput.addEventListener("focus", function () {
+        searchInput.placeholder = "";
+    });
+
+    // Add event listener to show placeholder on blur if the input is empty
+    searchInput.addEventListener("blur", function () {
+        if (!searchInput.value) {
+            searchInput.placeholder = "Search Plate #";
+        }
+    });
+});
+
+// Add event listener to handle search button click
+var searchButton = document.getElementById("searchButton");
+searchButton.addEventListener("click", function (event) {
+    event.preventDefault();
+    // Add logic to perform search based on input value
+    var searchQuery = searchInput.value;
+    console.log("Performing search for:", searchQuery);
+    // Clear the input field after performing search
+    searchInput.value = "";
 });
