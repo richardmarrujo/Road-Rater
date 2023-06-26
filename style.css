@@ -18,6 +18,10 @@ body {
     cursor: pointer;
 }
 
+#logoutButton:hover {
+    background-color: rgba(0, 0, 0, 0.334);
+}
+
 h1 {
      text-shadow: 5px 3px #000000;
 }
@@ -33,16 +37,66 @@ h2 {
     text-align: center;
     width: 30%;
     border: 2px solid rgb(0, 0, 0);
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: rgba(0, 0, 0, 0.24);
     border-radius: 150px;
 }
 
 input[type="text"],
 input[type="date"],
 input[type="number"],
+input[type="Search"],
 textarea {
     width: 30%;
     padding: 3px;
+}
+
+::placeholder{
+    color:  white;
+    text-indent: 10%;
+    opacity: .8;
+}
+
+#searchDiv{
+    position: absolute;
+    top: 5%;
+    width: 30%;
+}
+
+#searchInput{
+    position: absolute;
+    left: 5%;
+    width: 60%;
+    color: #ffffff;
+    text-indent: 10%;
+    font-size: 1.2rem;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.612);
+    border-radius: 150px;
+}
+
+#searchInput:hover {
+    border-color: rgba(255, 255, 255, 0.646);
+}
+
+#searchButton {
+    position: absolute;
+    right: 35%;
+    padding: 3px;
+    padding-left: 5px;
+    color: #ffffff;
+    opacity: .8;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-align: left;
+    font-size: 1.2rem;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.612);
+    border-radius: 150px;
+}
+
+#searchButton:hover {
+    border-color: rgba(255, 255, 255, 0.646);
+    opacity: 1;
 }
 
 .hiddenDiv {
@@ -65,35 +119,44 @@ textarea {
     height: auto;
 }
 
-#history{
-    font-size: 2rem;
-    text-shadow: 5px 3px #000000;
-}
-
 .dropdown {
     position: absolute;
     top: 13%;
     right: 5%;
     width: 20%;
+    height: 5%;
+    font-size: 2rem;
     border: 2px solid rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.612);
     border-radius: 15px;
     border-bottom: 0;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    cursor: pointer;
 }
 
-.arrow {
+#history{
+    margin-top: 0;
+    cursor: default;
+}
+
+.arrow:hover {
+    border-color: rgba(255, 255, 255, 0.646);
+}
+
+.arrowSelect{
     position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    width: 5px;
-    height: 0;
-    border-style: solid;
-    border-width: 7px 7px 0 7px;
-    border-color: #ffffff transparent transparent transparent;
+    top: 0;
+    right: 0;
+    width: 11%;
+    height: 100%;
+    margin-top: 0;
+    cursor: pointer;
+    z-index: 10;
+    border: 2px;
+}
+
+.arrowSelect:hover {
+    background-color: rgba(255, 255, 255, 0.237);
 }
 
 .dropdown-content {
@@ -101,6 +164,7 @@ textarea {
     position: absolute;
     top: 100%;
     width: 99%;
+    text-align: left;
     background-color: rgba(0, 0, 0, 0.612);
     border: 2px solid rgb(0, 0, 0);
     border-top: 0;
@@ -113,8 +177,6 @@ textarea {
 #arrayData {
     margin-top: 3px;
     white-space: pre-wrap;
-    border-bottom-left-radius: 15;
-    border-bottom-right-radius: 15;
 }
 
 footer {
