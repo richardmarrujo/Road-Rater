@@ -27,15 +27,17 @@
                 
                     <label for="rateField">Enter Rate:</label>
                     <input type="number" id="rateField" name="rateField">
-                    
                     <br>
+                    
                     <label for="plateField">Enter Plate:</label>
                     <input type="text" id="plateField" name="plateField">
                     <br>
-                    <br>
+                    <br> <!-- Adds extra room for comments box -->
+
                     <label for="commentsField">Enter Comments:</label>
                     <textarea id="commentsField" name="commentsField" rows="5"></textarea>
                     <br>
+
                     <input id="Submit" type="submit" value="Submit">
                     <br>
                 </form>
@@ -43,18 +45,24 @@
         </div>    
 
         <div class="dropdown">
-            <p>History</p>
-            <div class="arrowSelect"></div>
-            <div class="arrow"></div>
-            <div id="arrayData" class="dropdown-content">
-                <!-- Content of the dropdown -->
+            <p id="history">History</p>
+            <div class="arrowSelect">
+                &#8681;
             </div>
+            <div id="arrayData" class="dropdown-content">
+                <p> It's lonely here 🥺 </p>
+            </div>
+        </div>
+
+        <div id="searchDiv">
+            <input id="searchInput" type="search" placeholder="Search Plate #">
+            <button id="searchButton">Search</button>
         </div>
         
         <div id="submittedText" class="hiddenDiv">
             <h2>
                 <p>Thanks for filling out the form. We will add this to the collection</p>
-                <p>See what others are saying here</p>
+                <p>See what others are saying by using the search bar</p>
             </h2>
         </div>
     
