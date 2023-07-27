@@ -8,7 +8,8 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
         { username: 'spartan#6855', password: 'Carndog123' },
         { username: 'aperez', password: 'I love Dick' },
         { username: 'papapowski94', password: 'Richard is cool' },
-        { username: 'bbuford', password: 'Clickers123' }
+        { username: 'bbuford', password: 'Clickers123' },
+        { username: 'joest', password: 'Coding Is Fun' }
         // Add more username/password pairs as needed
     ];
 
